@@ -31,6 +31,13 @@ jobs:
       - name: Github Repository 파일 불러오기
         uses: actions/checkout@v4
 
+      - name: PR에 코멘트를 추가하겠습니다.
+        if: github.ref != 'refs/heads/main' # main 브랜치가 아닐 때만 이 단계 실행
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} --body "안녕하세요! PR을 검토하겠습니다. 👋"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Node 설치
         uses: actions/setup-node@v4
         with:
@@ -50,5 +57,8 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
+      - name: Github Repository 파일 불러오기
+        uses: actions/checkout@v4
+
       - name: 배포하기
         run: npm run deploy
