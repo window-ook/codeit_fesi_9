@@ -45,12 +45,10 @@ jobs:
       - name: 빌드하기
         run: npm run build
 
-    deploy:
-      needs: my-job
-      if: github.ref === 'refs/heads/main'
-
-      runs-on: ubuntu-latest
-
-      steps:
-        - name: 배포하기
-          run: npm run deploy
+  deploy:
+    needs: my-job
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 배포하기
+        run: npm run deploy
