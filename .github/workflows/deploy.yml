@@ -13,8 +13,7 @@ on:
 # 여러 Job은 기본적으로 병렬적으로 수행된다.
 jobs: 
   # Job을 식별하기 위한 id -> 이름은 자유롭게 작성
-  my-job: 
-	  # Github Actions를 실행시킬 서버 종류 선택
+  my-job:
     runs-on: ubuntu-latest
     
     # Step : 특정 작업을 수행하는 가장 작은 단위
