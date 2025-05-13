@@ -23,11 +23,11 @@ export default async function ProductsPage() {
                             data-product-id={product.id}
                         >
                             <li>
-                                <img
+                                {/* <img
                                     className="w-full"
                                     src={product.image}
                                     alt={product.title}
-                                />
+                                /> */}
                                 <p>{product.title}</p>
                                 <p>{product.price}</p>
                             </li>

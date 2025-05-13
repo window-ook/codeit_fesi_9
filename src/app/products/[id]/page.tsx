@@ -33,7 +33,7 @@ export default function ProductPage() {
                 <div>로딩중</div>
             ) : (
                 <div className="w-78 h-auto border">
-                    <img className="w-78" src={product?.image} alt={product?.title} />
+                    {/* <img className="w-78" src={product?.image} alt={product?.title} /> */}
                     <h1>{product?.title}</h1>
                     <p>{product?.price}</p>
                     <p>{product?.description}</p>

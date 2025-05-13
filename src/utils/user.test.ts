@@ -1,4 +1,3 @@
-import axios from "axios";
 import { fetchUsers, getUser } from "./user";
 
 test("fetchUsers 함수가 사용자 데이터를 반환해야 함", async () => {

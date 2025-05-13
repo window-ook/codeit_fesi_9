@@ -1,6 +1,5 @@
 import { calculatePrice, type Membership, type Coupon } from "./discountCalculator";
 
-const BASE_PRICE_200K = 200000;
 const BASE_PRICE_100K = 100000;
 const BASE_PRICE_50K = 50000;
 const BASE_PRICE_30K = 30000;

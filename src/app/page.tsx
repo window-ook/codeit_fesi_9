@@ -2,8 +2,6 @@
 
 import { useEffect, useState } from "react";
 
-const a = "a";
-
 export default function Home() {
   const [posts, setPosts] = useState<{ id: number; title: string }[]>([]);
   useEffect(() => {
