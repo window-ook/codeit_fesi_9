@@ -8,8 +8,8 @@ on:
     branches:
       - main
   pull_request:
-  branches:
-    - '**'
+    branches:
+      - '**'
 
 permissions:
   contents: read
