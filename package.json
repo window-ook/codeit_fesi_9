@@ -13,7 +13,8 @@
     "test:playwright": "playwright test",
     "test:playwright:ui": "playwright test --ui",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "deploy": "echo '아직 배포 스크립트가 작성되지 않았습니다.'"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.0",
